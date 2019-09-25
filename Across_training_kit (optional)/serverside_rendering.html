@@ -1,0 +1,40 @@
+<html>
+<head>
+
+
+<link rel="stylesheet" type="text/css" href="./serverside_datatable/datatableJSE/datatables.bootstrap.min.css" />
+</head>
+<body style='padding:3%;'>
+<img src="./serverside_datatable/logo2.png"> 
+
+
+<h1>Server Side Rendering</h1><hr>
+
+
+<h2>You are free to use ajax or any other ways to parse server apis that returns json values</h2>
+
+<hr>
+
+<p>You can use jquery $.post to parse APIs</p>
+<pre>
+<code>
+$.post("http://site.example.com/api/data").done(function(data){
+	var n=JSON.parse(data);
+	/* Json manipulation here*/
+});
+
+or 
+
+$.ajax({
+	url:"http://site.example.com/api/data",
+	data:{topass:topass},
+	method:"POST",
+	success:function(data){ },
+	error:function(err){ console.log(err); }
+
+});
+</code>
+</pre>
+<p>But.. you may also use vanilla javascript Ajax code and other more to render APIs</p>
+</body>
+<script type="text/javascript" src="./serverside_datatable/jquery.min.js"></script>

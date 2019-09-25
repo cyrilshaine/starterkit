@@ -1,0 +1,38 @@
+.site-title1{ display:block; color:#000; }
+.site-title2{ display:none; }
+
+@media(max-width:1440px){
+
+.site-title2{ display:block; color:#000; }
+
+}
+
+@media(max-width:892px){
+
+.site-title2{ display:block; color:#000; }
+
+}
+
+
+.white-skin .side-nav .collapsible li .collapsible-body1 a{
+	background: #fff;
+	color:rgba(4,119,187,1);
+}
+
+.collapsible-header{ 
+background:rgba(4,119,187,1); 
+}
+
+.white-skin .side-nav .collapsible li .collapsible-header{ color: yellow; background:rgba(4,119,187,1); }
+
+.white-skin .side-nav .collapsible li .collapsible-header.active {
+    color: yellow; 
+    background:rgba(4,119,187,1);
+}
+
+.white-skin .navbar .navbar-nav .nav-item a{ color:#fff;}
+
+.white-skin .side-nav .collapsible li .collapsible-header:hover {
+    color: yellow;
+    background: rgba(4,119,187,0.5);
+}

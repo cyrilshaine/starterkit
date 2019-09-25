@@ -1,0 +1,114 @@
+<html>
+<head>
+
+
+<link rel="stylesheet" type="text/css" href="./datatableJSE/datatables.bootstrap.min.css" />
+</head>
+<body style='padding:3%;'>
+<img src="./logo2.png"> 
+
+
+<h1>Serverside Rendering Datatable</h1>
+<h3>To handle big data in datatables</h3>
+<hr>
+<table id='pl_tbl' class='table table-bordered'>
+<thead>
+<tr>
+<th>Col 1</th>
+<th>Col 2</th>
+</tr>
+</thead>
+<tbody>
+
+</tbody>
+</table>
+
+<br><br><hr>
+
+<pre>
+<code>
+
+settbl();
+
+function settbl(){ /* You may change the link of the server side json URL*/
+var link="./serverside.php";
+SYS_TableServerside(link);
+}
+
+
+function SYS_TableServerside(url){ /* Sets Datatable Appearance*/
+SYS_TableStart("#pl_tbl");  
+$("#pl_tbl").fadeIn(); 
+   $('#pl_tbl').DataTable( {
+        "processing": true,
+        "serverSide": true,
+        "ajax": {
+            "url": url+"",
+            "dataType": "json",
+            "error": function(jqXHR, textStatus, errorThrown){
+        $('#pl_tbl tbody').html("<tr><td colspan='10'>No Results Found</td></tr>");
+        $('#pl_tbl.dataTables_info').text("Showing 0 to 0 of 0 entries");
+           }
+        }
+
+    });
+
+
+}
+
+
+function SYS_TableStart(tablename){ /* Use this to use multiple datatables at one page*/
+$(tablename).hide();  
+$(tablename).DataTable().destroy();   
+}
+
+
+
+</code>
+</pre>
+
+
+
+</body>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="./datatableJSE/datatables.min.js"></script>
+<script type="text/javascript" src="./datatableJSE/dataTables.bootstrap.min.js"></script>
+<script type="text/javascript">
+settbl();
+
+function settbl(){ /* You may change the link of the server side json URL*/
+var link="./serverside.php";
+SYS_TableServerside(link);
+}
+
+
+function SYS_TableServerside(url){ /* Sets Datatable Appearance*/
+SYS_TableStart("#pl_tbl");	
+$("#pl_tbl").fadeIn(); 
+   $('#pl_tbl').DataTable( {
+        "processing": true,
+        "serverSide": true,
+        "ajax": {
+            "url": url+"",
+            "dataType": "json",
+            "error": function(jqXHR, textStatus, errorThrown){
+        $('#pl_tbl tbody').html("<tr><td colspan='10'>No Results Found</td></tr>");
+        $('#pl_tbl.dataTables_info').text("Showing 0 to 0 of 0 entries");
+           }
+        }
+
+    });
+
+
+}
+
+
+function SYS_TableStart(tablename){ /* Use this to use multiple datatables at one page*/
+$(tablename).hide();  
+$(tablename).DataTable().destroy();   
+}
+
+
+
+</script>
+</html>

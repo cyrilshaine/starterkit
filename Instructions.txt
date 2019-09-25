@@ -1,0 +1,51 @@
+Welcome To Acrossmedia I.T. Solutions
+
+This starter kit will serve as the basic foundation that will help across developers in build web apps quickly. 
+
+Why php? Well most of our legacy apps are built with php.
+
+
+Lets Begin
+
+1.Install XAMPP
+2.Place the template(across_template_mark2.7) inside the htdocs folder
+3.import the sql file to phpmyadmin it is located inside the template folder
+
+
+
+5.Read and study Codeigniter manual (only if your just getting started with codeigniter) 
+
+
+6.Practice yourself ...do "First Activity" if no project is assigned to you yet
+
+
+Note: Always have a backup of this starter kit. So that when a new project arrives, you'll have your templates.
+
+
+
+
+################################################################
+Reminder:
+For questions ask your fellow developers for help. 
+
+
+Thank you and Happy Coding.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

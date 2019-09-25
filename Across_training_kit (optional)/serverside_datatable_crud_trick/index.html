@@ -1,0 +1,221 @@
+<html>
+<head>
+
+
+<link rel="stylesheet" type="text/css" href="./datatableJSE/datatables.bootstrap.min.css" />
+<style type="text/css">
+.setcont{ display:none;}
+
+</style>
+</head>
+<body style='padding:3%;'>
+<img src="./logo2.png"> 
+
+
+<h1>Serverside Rendering Datatable</h1>
+<h3>with CRUD -> Updating Process</h3>
+<hr>
+
+
+
+<div class='setcont' id='setcont1' >
+<button onclick='Add_form()'>Add</button>
+
+<table id='pl_tbl' class='table table-bordered'>
+<thead>
+<tr>
+<th>Col 1</th>
+<th>Col 2</th>
+<th>Edit</th>
+</tr>
+</thead>
+<tbody>
+
+</tbody>
+</table>
+
+
+
+</div>
+
+
+<div class='setcont' id='setcont2' >
+ <button onclick='setcont(1)' class='btn btn-primary'>Back</button>   
+<div>
+<label>Col1</label>
+<input type='text' id='col1' class='erase-mark'>
+
+</div>
+
+<label>Col2</label>
+<input type='text' id='col2' class='erase-mark'>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<br><br>
+<hr>
+<pre>
+<code>
+
+
+
+
+$(document).ready(()=>{
+
+
+settbl();
+setcont(1);
+
+});
+
+function setcont(n){
+  $('.setcont').hide();  
+  $('#setcont'+n).show();  
+}
+
+function Add_form(){
+setcont(2) //shows the Edit form Content ,You may also make multiple contents
+$('.erase-mark').val("");
+}
+
+function Edit_funct(x){
+setcont(2) //shows the Edit form Content ,You may also make multiple contents
+
+    var col1=$('#tbl_col1'+x).val();
+    var col2=$('#tbl_col2'+x).val();
+
+    $('#col1').val(col1);
+    $('#col2').val(col2);
+}
+
+
+
+
+
+
+
+
+function settbl(){ /* You may change the link of the server side json URL*/
+var link="./serverside_crud_list.php";
+SYS_TableServerside(link);
+}
+
+
+function SYS_TableServerside(url){ /* Sets Datatable Appearance*/
+SYS_TableStart("#pl_tbl");  
+$("#pl_tbl").fadeIn(); 
+   $('#pl_tbl').DataTable( {
+        "processing": true,
+        "serverSide": true,
+        "ajax": {
+            "url": url+"",
+            "dataType": "json",
+            "error": function(jqXHR, textStatus, errorThrown){
+        $('#pl_tbl tbody').html("<tr><td colspan='10'>No Results Found</td></tr>");
+        $('#pl_tbl.dataTables_info').text("Showing 0 to 0 of 0 entries");
+           }
+        }
+
+    });
+
+
+}
+
+
+function SYS_TableStart(tablename){ /* Use this to use multiple datatables at one page*/
+$(tablename).hide();  
+$(tablename).DataTable().destroy();   
+}
+
+
+
+
+</code>
+</pre>
+
+
+
+</body>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="./datatableJSE/datatables.min.js"></script>
+<script type="text/javascript" src="./datatableJSE/dataTables.bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(()=>{
+
+
+settbl();
+setcont(1);
+
+});
+
+function setcont(n){
+  $('.setcont').hide();  
+  $('#setcont'+n).show();  
+}
+
+function Add_form(){
+setcont(2) //shows the Edit form Content ,You may also make multiple contents
+$('.erase-mark').val("");
+}
+
+function Edit_funct(x){
+setcont(2) //shows the Edit form Content ,You may also make multiple contents
+
+    var col1=$('#tbl_col1'+x).val();
+    var col2=$('#tbl_col2'+x).val();
+
+    $('#col1').val(col1);
+    $('#col2').val(col2);
+}
+
+
+
+
+
+
+
+
+function settbl(){ /* You may change the link of the server side json URL*/
+var link="./serverside_crud_list.php";
+SYS_TableServerside(link);
+}
+
+
+function SYS_TableServerside(url){ /* Sets Datatable Appearance*/
+SYS_TableStart("#pl_tbl");	
+$("#pl_tbl").fadeIn(); 
+   $('#pl_tbl').DataTable( {
+        "processing": true,
+        "serverSide": true,
+        "ajax": {
+            "url": url+"",
+            "dataType": "json",
+            "error": function(jqXHR, textStatus, errorThrown){
+        $('#pl_tbl tbody').html("<tr><td colspan='10'>No Results Found</td></tr>");
+        $('#pl_tbl.dataTables_info').text("Showing 0 to 0 of 0 entries");
+           }
+        }
+
+    });
+
+
+}
+
+
+function SYS_TableStart(tablename){ /* Use this to use multiple datatables at one page*/
+$(tablename).hide();  
+$(tablename).DataTable().destroy();   
+}
+
+
+
+</script>
+</html>

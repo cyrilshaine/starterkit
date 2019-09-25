@@ -1,0 +1,91 @@
+<html>
+<head>
+
+
+<link rel="stylesheet" type="text/css" href="./datatableJSE/datatables.bootstrap.min.css" />
+<style type="text/css">
+.setcont{ display:none;}
+
+</style>
+</head>
+<body style='padding:3%;'>
+<img src="./logo2.png"> 
+
+
+<h1>Page Tabbing Trick</h1>
+<h3>An Alternative tabbing way</h3>
+
+<hr>
+
+
+
+<div class='setcont' id='setcont1' >
+Page 1
+
+</div>
+
+
+<div class='setcont' id='setcont2' >
+
+Page 2
+
+</div>
+
+
+
+<div class='setcont' id='setcont3' >
+
+Page 3
+
+</div>
+
+
+<button onclick='setcont(1)'>setcont(1)</button>
+
+<button onclick='setcont(2)'>setcont(2)</button>
+
+<button onclick='setcont(3)'>setcont(3)</button>
+
+
+<pre>
+<code>
+
+$(document).ready(()=>{
+
+
+setcont(1);
+
+});
+
+function setcont(n){
+  $('.setcont').hide();  
+  $('#setcont'+n).show();  
+}
+
+
+</code>
+</pre>
+
+
+</body>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="./datatableJSE/datatables.min.js"></script>
+<script type="text/javascript" src="./datatableJSE/dataTables.bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(()=>{
+
+
+setcont(1);
+
+});
+
+function setcont(n){
+  $('.setcont').hide();  
+  $('#setcont'+n).show();  
+}
+
+
+
+
+</script>
+</html>

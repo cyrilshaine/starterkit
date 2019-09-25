@@ -1,0 +1,451 @@
+/*********************************/
+/* General Form Styles */
+/*********************************/
+input.add{
+    font-family: Arial, Verdana, Tahoma;
+    font-size: 12px;
+    color: #FFFFFF;
+    margin: 3px;
+    margin-right: 29px;   
+    padding: 4px;
+    border-style:hidden;
+    border-radius: 3px;
+    cursor: pointer;
+    float:right;
+    text-align:center;
+    text-indent:14px;
+    border:1px solid rgba(255,255,255,0.8);
+    background: url(../images/icons/add.gif) #0078B3 no-repeat 3px;
+    
+}
+form {
+    padding: 0;
+    margin: 0;   
+}
+
+.label {
+     text-transform:capitalize;
+    font-size: 14px;
+    color:#004566;}
+select, input {
+    border: 1px solid #C0C0C0;
+    font-family: Verdana, Tahoma;
+    font-size: 12px;
+    color: #808080;
+    background-color: #ffffff;
+    border-radius: 3px;
+        border:1px solid rgba(183,183,183,1);
+    border: 1px solid rgba(104,190,253,1);
+    font-family: Verdana, Tahoma;
+    font-size: 12px;
+    color: #808080;
+    background-color: #ffffff;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+input.textbox, .select,textarea {
+    
+    font-family: Verdana, Tahoma;
+    font-size: 12px;
+    color: #808080;
+    width: 200px;
+    background-color: #ffffff;
+    padding: 7px;
+    border-radius: 3px;
+    
+    border:1px solid rgba(183,183,183,1);
+}
+input.textbox,.select,textarea {
+    border: 1px solid rgba(104,190,253,1);
+    font-family: Verdana, Tahoma;
+    font-size: 12px;
+    color: #808080;
+    width: 300px;
+    background-color: #ffffff;
+    padding: 7px;
+    border-radius: 3px;
+}
+.select{
+    width:315px;
+}
+
+input.buttonActive, .buttonActive {
+    background-color:#0078B3;
+    font-family: Arial, Verdana, Tahoma;
+    font-size: 12px;
+    color: #FFFFFF;
+    margin: 0px;    
+    padding: 4px;
+    border-style:hidden;
+    border-radius: 3px;
+    cursor: pointer;
+}
+input.buttonActive:hover, .buttonActive:hover
+{
+    background-color:#0093D9;
+    
+}
+input.buttonInactive, .buttonInactive {
+    background-color: #DBDBDB;
+    font-family: Arial, Verdana, Tahoma;
+    font-size: 12px;
+    color: #333333;
+    margin: 0px;    
+    padding: 2px 4px 2px 4px;    
+}
+
+form table td {
+    font-size: 12px;
+    color: #969696;
+}
+
+/*********************************/
+/* General Form Styles */
+/*********************************/
+
+/*********************************/
+/* Home - Top Link */
+/*********************************/
+
+#topLinkHolder ul li a {     
+    margin: 0px 10px 0px 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+}
+
+#topLinkHolder ul li a.activeLink { 
+    text-decoration: none;
+    color: #99CC00;
+}
+
+#topLinkHolder ul li a:hover { 
+    color: #99CC00;    
+}
+
+/*********************************/
+/* Home - Top Link */
+/*********************************/
+
+/*********************************/
+/* Home - Login Foot Link */
+/*********************************/
+
+.loginFormLink a{
+    font-size: 11px;
+    color: #808080;
+    text-decoration: none;
+}   
+                
+/*********************************/
+/* Home - Login Foot Link */
+/*********************************/
+
+/*********************************/
+/* Home - Footer Link */
+/*********************************/
+
+#footLinkHolder a { 
+    font-size: 11px;
+    color: #808080;
+    text-decoration: none;
+}
+
+#footLinkHolder a:hover { 
+    text-decoration:  underline;
+}
+
+/*********************************/
+/* Home - Footer Link */
+/*********************************/
+
+/*********************************/
+/* Inside - Status Link */
+/*********************************/
+
+#statusHolder span.linkStatus{
+    padding-left: 20px;
+    margin-left: 10px;
+}
+    #statusHolder span#mssg {
+        background: transparent url(../images/icons/messages.png) no-repeat left;
+    }
+    #statusHolder span#user {
+        background: transparent url(../images/icons/user.png) no-repeat left;
+    }
+    #statusHolder span#logout {
+        background: transparent url(../images/icons/logout.png) no-repeat left;
+    }
+        #statusHolder span a {
+            color: #969696;
+            text-decoration: none;
+        }
+        #statusHolder span a:hover {
+            color: #333333;
+        }
+
+/*********************************/
+/* Inside - Status Link */
+/*********************************/
+
+#authorization li a{
+   padding: 5px 0px 5px 35px;
+  color:#003F7D;
+  font-weight: normal;
+  text-decoration: none;
+  display: block;
+  background: #EBEBEB url(../images/icons/pages.gif) no-repeat 10px;
+}
+#authorization li a:hover{
+  background-color: rgba(141,211,254,1);
+}
+
+/*********************************/
+/* Inside - Tab Link */
+/*********************************/
+
+#tabHolder a {
+    text-decoration: none;
+    padding: 10px 8px 8px 10px;
+    margin-right: 0px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #fff;
+    font-weight:bold;
+}
+
+#tabHolder a.activeLink {
+    font-size: 12px;
+    color: #fff;
+    text-wrap:normal;
+    background-color: rgba(255,255,255,0.2);
+    text-shadow:0px 1px 1px rgba(1,1,1,0.2);
+}
+
+#tabHolder a:hover {
+    color: #fff;
+    text-decoration:underline;
+}
+
+/*********************************/
+/* Inside - Tab Link */
+/*********************************/
+
+/*********************************/
+/* General Link Styles */
+/*********************************/
+
+a, a img {
+  border-width: 0px;
+  outline: none;  
+}
+
+/*********************************/
+/* General Link Styles */
+/*********************************/
+
+/*********************************/
+/* Control Panel Image Link Styles */
+/*********************************/
+#dashboardPanel{
+width:100%;
+}
+
+#dashboardPanel a {
+    float: left;
+    text-decoration: none;
+    color: #c0c0c0;
+    font-size: 9px;
+    font-family: Verdana, Arial;
+}
+
+#dashboardPanel a:hover {
+    color: #333333;
+}
+
+#dashboardPanel a img{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #f4f4f4;
+}
+
+#dashboardPanel a:hover img{
+    border: 1px solid #f4f4f4;
+}
+
+#dashboardPanel a .cpanelImageLinkLabel {
+    text-align: center;
+    width: 90px;
+    display:  block;
+    
+    
+}
+
+/*********************************/
+/* Control Panel Image Link Styles */
+/*********************************/
+
+/*********************************/
+/* Paging Link Styles */
+/*********************************/
+
+#pagination a{
+    text-decoration:  none;
+    margin:0px 1px 0px 1px;
+    font-size: 12px;
+}
+#pagination .pageLink a {
+    border: 1px solid #C4C4C4;
+    padding: 1px 4px 1px 4px;
+    color: #A6A6A6;
+}
+#pagination #pageLinkCur {
+    border: 1px solid #808080;
+    background-color: #808080;
+    padding: 1px 4px 1px 4px;
+    color: #eeeeee;
+}
+#pagination .pageLink a:hover {
+    border: 1px solid #C0C0C0;
+    background-color: #C0C0C0;
+    padding: 1px 4px 1px 4px;
+    color: #eeeeee;    
+}
+
+
+/*********************************/
+/* Paging Link Styles */
+/*********************************/
+
+
+/*********************************/
+/* General Text Styles */
+/*********************************/
+
+p {
+    font-size: 12px;
+    color: #333333;
+}
+p.title {
+    color: #99CC00;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+p.subtitle {
+    color: #808080;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/*********************************/
+/* General Text Styles */
+/*********************************/
+
+/*********************************/
+/* General AJAX Styles */
+/*********************************/
+
+.ajaxloading {
+    font-size: 11px;
+    color: #969696;
+}
+
+/*********************************/
+/* General AJAX Styles */
+/*********************************/
+
+/*Location: Homepage*/
+
+.firstLetter{
+    font-weight: bold;
+    color: #ffcc00;
+    font-size: 26px;
+}
+.restLetter{
+    font-weight: bold;
+    color: #808080;
+    font-size: 21px;
+}
+
+/*Location: Contentpage*/
+
+.firstTxt{
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.restTxt{
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+/*********************************/
+/* Accordion Styles */
+/*********************************/
+
+#dashboardAccordion ul {
+    padding: 0; margin: 0;
+    font-size: 12px;
+}
+
+#dashboardAccordion li .date {
+    color: #969696;
+}
+
+#dashboardAccordion h3{
+    font-weight: bold;
+}
+#footer_fb{
+    color:#000;
+    width:100%;
+    height: 60px;
+    background: #3b5998; /* Old browsers */
+    background: -moz-linear-gradient(top,  #3b5998 0%, #3b5998 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3b5998), color-stop(100%,#3b5998)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #3b5998 0%,#3b5998 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #3b5998 0%,#3b5998 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #3b5998 0%,#3b5998 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #3b5998 0%,#3b5998 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b5998', endColorstr='#3b5998',GradientType=0 ); /* IE6-9 */
+}
+#footer_fb_content{
+    padding: 15px;
+    font-size:12px;
+    color:rgba(255,255,255,0.5);
+    }
+#footer_fb_content a{
+    font-size:12px;
+    color:rgba(255,255,255,0.5);
+    }
+.left{float:left;}
+.right{float:right;}
+fieldset{
+    border-radius:5px;
+}
+legend{
+    font-weight:bold;
+}
+
+
+/*.control-label{
+    text-align:right;
+    color: #5C5C5C;
+    font-weight:bold;
+    padding-right:10px;
+    margin-right:0px;
+}
+*/
+/*********************************/
+/* Accordion Styles */
+/*********************************/
+
+/*********************************/
+/* Control Panel Image Link Styles */
+/*********************************/
+
+
+/*********************************/
+/* Control Panel Image Link Styles */
+/*********************************/
+
