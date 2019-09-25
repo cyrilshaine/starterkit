@@ -1,4 +1,6 @@
-FOLDERS
+Download this starterkit on your PC or localhost
+
+
 
 
 across_template_mark2.7
